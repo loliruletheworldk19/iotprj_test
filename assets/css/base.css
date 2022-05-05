@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root {
+    --background-out3 : #1f2a40; 
+    --background-out2 : #5f80c2;
+    --background-out1 : #2b3851;
+    --background-select : #1b253a;
+    --border-color : #141b29;
+    
+
+    --font-color2: #657e96;
+    --font-color1: #9ea6b3;
+    --font-user: #b5bec3;
+    --font-select: #1a75cd;
+
+    --color-data-on: #198ffa;
+    --color-data-off: #3c4d6c;
+
+
+    
+}
+
+@keyframes load_data {
+    from {
+        opacity: 0;
+        height: 10%;
+    }
+    to {
+        opacity: 1;
+        height: var(--dayx);
+    }
+}
+
+@keyframes load_circle {
+    from {
+        opacity: 0.5;
+        stroke-dashoffset: 310;
+    }
+    to {
+        opacity: 1;
+        stroke-dashoffset: 96.1;
+    }
+}
+
+
+
+
+/* Overview */
+#full_overview {
+    width: 100%;
+    height: 937px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    width: 100%;
+    height: 8%;
+    /* background-color: gray; */
+    display: flex;
+} 
+.center {
+    width: 100%;
+    height: 76%;
+    background-color: #1f2a40;
+    border-top: 1px solid #141b29;;
+    display: flex;
+}
+.bottom {
+    height: 16%;
+    background-color: #6c85b8;
+    margin-top: 15px;
+}
+
